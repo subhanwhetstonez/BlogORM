@@ -1,11 +1,13 @@
-const BlogService = require("../service/blog_services");
+const BlogService = require("../service/blog_services.js");
 
 class BlogController {
   constructor() {
+    console.log("Waa");
     this.blogService = new BlogService();
   }
 
   async blogDisplay(req, res) {
+    console.log("wii");
     const data = await this.blogService.blogDisplay();
     res.json(data);
   }

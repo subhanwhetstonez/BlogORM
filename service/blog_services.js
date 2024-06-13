@@ -2,6 +2,7 @@ const { Blog } = require("../models");
 
 class BlogService {
   async blogDisplay() {
+    console.log("Woo");
     return await Blog.findAll();
   }
 
