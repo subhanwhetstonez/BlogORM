@@ -10,6 +10,9 @@ app.use(bodyParser.json());
 
 // Routes
 app.use("/api", routes);
+// app.use("/", (res, req) => {
+//   console.log("HELLO WORLD!!");
+// });
 
 // Sync database and start server
 const PORT = process.env.PORT || 3000;
